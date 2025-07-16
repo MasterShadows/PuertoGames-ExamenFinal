@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Estadisticas Del Tiempo.</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-4">
+  <h1 class="text-3xl font-bold text-center mb-4">🌦 Clima En la Ciudad 🌦 </h1>
+
+  <form id="weatherForm" class="flex justify-center mb-4">
+    <input id="cityInput" class="border p-2 rounded-l" placeholder="Ciudad">
+    <button class="bg-blue-500 text-white px-4 rounded-r">Buscar</button>
+  </form>
+
+  <div id="weatherInfo" class="text-center mb-4"></div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <canvas id="tempChart" class="max-w-xs mx-auto"></canvas>
+    <canvas id="humidityChart" class="max-w-xs mx-auto"></canvas>
+    <canvas id="windChart" class="max-w-xs mx-auto"></canvas>
+    <canvas id="pressureChart" class="max-w-xs mx-auto"></canvas>
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>
