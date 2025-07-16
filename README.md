@@ -1,4 +1,4 @@
-# WeatherStats 🌦
+# Estadisticas Del Clima 🌦
 
 Aplicación web para visualizar datos del clima y estadísticas gráficas.
 
